@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @article.name %>
+</p>
+
+<p>
+  <b>Slug:</b>
+  <%= @article.slug %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @article.body %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @article.position %>
+</p>
+
+<p>
+  <b>Home:</b>
+  <%= @article.home %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @article.parent_id %>
+</p>
+
+<p>
+  <b>Metaitem:</b>
+  <%= @article.metaitem_id %>
+</p>
+
+<% if @article.metaitem.present? %>
+ <%= @article.metaitem.to_json %>
+<% end %>
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

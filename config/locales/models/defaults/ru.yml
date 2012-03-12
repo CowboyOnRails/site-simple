@@ -1,0 +1,24 @@
+ru:
+  activerecord:
+    models:
+      article: "Раздел"
+      feedback: "Обратная Связь"
+      metaitem: "Метаданные"
+    attributes:
+      article: 
+        name: Название
+        body: Содержание
+        position: Позиция
+        parent_id: Родитель
+        slug: Псевдоним
+        home: Главная
+        top: Вверху
+      feedback:
+        name: "Ваше имя"
+        email: "Ваша почта"
+        title: Тема
+        message: Сообщение
+      metaitem:
+        title: "Заголовок"
+        description: "Описание"
+        keywords: "Ключевые слова"

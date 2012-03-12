@@ -1,0 +1,2 @@
+module MetaitemsHelper
+end

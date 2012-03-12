@@ -1,0 +1,13 @@
+<%= include_imperavi_stylesheet %>
+<%= include_imperavi_javascript %>
+<%= imperavi target,
+  :paths => {
+    :images => {
+      # Path to upload handler
+      :upload => images_path,
+
+      # Path to list of images
+      :list   => images_path(:format => :json)
+    }
+  }
+%>

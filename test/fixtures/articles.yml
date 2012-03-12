@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  slug: MyString
+  body: MyText
+  position: 1
+  home: false
+  parent_id: 1
+  metaitem_id: 1
+
+two:
+  name: MyString
+  slug: MyString
+  body: MyText
+  position: 1
+  home: false
+  parent_id: 1
+  metaitem_id: 1
