@@ -34,4 +34,18 @@ Newage::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  #Mailer
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  config.action_mailer.delivery_method = :smtp
+  # Defaults to:
+   config.action_mailer.smtp_settings = {
+     :address              => "smtp.gmail.com",
+     :port                 => 587,
+     :domain               => "localhost",
+     :user_name            => "victor.pukman",
+     :password             => "04081990g",
+     :authentication       => "plain",
+     :enable_starttls_auto => true
+   }
 end

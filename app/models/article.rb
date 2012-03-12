@@ -8,8 +8,9 @@ class Article < ActiveRecord::Base
 	
 	validates :position, :parent_id, :numericality => {:only_integer => true}
 	validates :home, :uniqueness => true, :if => 'self.home' #validate if home checked
-	#validates :home, :top, :inclusion => {:in => [false,true]}
-	#validate  :check_home
+	
+    scope :top, where('top = true')
+    scope :desc, order('position DESC')
 
 	def to_param
 		"#{id}-#{slug}"

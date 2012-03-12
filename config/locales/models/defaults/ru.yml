@@ -2,8 +2,10 @@ ru:
   activerecord:
     models:
       article: "Раздел"
-      feedback: "Обратная Связь"
       metaitem: "Метаданные"
+      user: Пользователь
+      location: Настройки
+      feedback: "Обратная связь"
     attributes:
       article: 
         name: Название
@@ -22,3 +24,19 @@ ru:
         title: "Заголовок"
         description: "Описание"
         keywords: "Ключевые слова"
+      user:
+        email: Логин
+        password: Пароль
+        password_confirmation: "Подтвердить пароль"
+        remember_me: "Запомнить меня"
+      location:
+        phone1: "Телефон 1"
+        phone2: "Телефон 2"
+        adress: "Адрес компании"
+        email: "Почта обратной связи"
+        sitename: "Название сайта"
+      feedback:
+        name: "Ваше имя"
+        email: "Ваша почта"
+        title: "Тема"
+        message: "Сообщение"

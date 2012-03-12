@@ -11,5 +11,7 @@
 
 <%= yield %>
 
+<%= render "shared/tool_bar" if user_signed_in? %>
+
 </body>
 </html>

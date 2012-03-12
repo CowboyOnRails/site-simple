@@ -3,6 +3,8 @@ if Rails.env.development? || Rails.env.staging?
   Rake::Task["db:reset"].invoke
 end 
 
+User.create(:email=>'mail@mail.com',:password => 'password')
+
 Location.create(:adress => "Наш адрес",:phone1 => '311-11-11', :phone2 => '311-11-22',
      :email => 'pop-corm2@ya.ru',:copyright => 'copyright',:sitename => 'Сайт Simple')
 
