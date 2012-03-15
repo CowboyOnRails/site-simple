@@ -16,6 +16,7 @@ end
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'execjs'
+gem 'client_side_validations', '~> 3.0.0'
 
 #Authentication
 gem 'devise', :git =>'git://github.com/plataformatec/devise.git'
