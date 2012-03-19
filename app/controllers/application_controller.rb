@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  
+  rescue_from Exception, :with => :handle_exceptions
   before_filter :authenticate_user!, :except => [:show,:index]
 
   def handle_exceptions(e)
