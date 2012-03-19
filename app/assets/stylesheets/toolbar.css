@@ -1,0 +1,26 @@
+#toolbar {
+    height: 30px; width: 100%;
+    position: fixed; top: 0;
+    background: #505050; opacity: 0.8;
+
+    text-align: center;
+}
+    #toolbar ul {
+        margin: 0 0 0 -30px; padding: 5px 0 0 0;
+        width: 1002px; display: inline-block;
+        font-size: 15px; text-align: left;
+        font-family: Calibry,Gill, Helvetica, sans-serif;
+    }
+        #toolbar ul li {
+            display: inline-block;
+            padding: 2px 15px 2px 15px;
+            border-right: solid 0px #fff;
+        }
+            #toolbar ul li a {}
+            #toolbar ul li a:link, #toolbar ul li a:visited {color: #FFF; text-decoration: none;}
+            #toolbar ul li a:hover, #toolbar ul li a:active 
+            {
+              color: grey; 
+              text-decoration: none;
+              background-color: #FFF;
+            }

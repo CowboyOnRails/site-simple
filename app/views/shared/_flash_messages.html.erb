@@ -1,0 +1,12 @@
+<% if notice %>
+ <script type= "text/javascript">
+   humane.waitForMove = true;
+   humane.success("<%= notice%>");
+ </script> 
+<% else if alert %>
+  <script type= "text/javascript">
+    humane.waitForMove = true;
+    humane.error("<%= alert%>");
+  </script>
+  <% end %> 
+<% end %>

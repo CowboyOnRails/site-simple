@@ -1,0 +1,12 @@
+.field_with_errors {
+    display: inline;
+    .message {
+      font-style:italic;
+      color: red;
+      padding: 0 0 0 5px;
+    }
+}
+.field_with_errors input,
+.field_with_errors textarea {
+    border: 2px solid red;
+}

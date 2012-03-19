@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Newage</title>
+  <title></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
 
@@ -11,7 +11,10 @@
 
 <%= yield %>
 
-<%= render "shared/tool_bar" if user_signed_in? %>
+<% if user_signed_in? %>
+  <%= render "shared/toolbar" %>
+  <%= render "shared/flash_messages"%>
+<% end %>
 
 </body>
 </html>
